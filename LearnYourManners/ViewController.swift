@@ -12,6 +12,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var mannerTableView: UITableView!
     
+    var lastSelectedIndexPath: Int = -1
+    var selectedIndexes: [Int] = []
+    
     var manners: [Manner] = [
         EyeContact(),
         GivingCompliments(),
@@ -47,10 +50,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = UITableViewCell()
         cell.textLabel!.text = manner.name
         
+        print("Testing accessoryType for \(indexPath.row) ... does it equal \(lastSelectedIndexPath)")
+        cell.accessoryType = (lastSelectedIndexPath == indexPath.row) ? .Checkmark : .None
+        
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if indexPath.row != lastSelectedIndexPath
+        {
+            let newCell = tableView.cellForRowAtIndexPath(indexPath)
+            newCell?.accessoryType = .Checkmark
+            
+            lastSelectedIndexPath = indexPath.row
+        }
         
         //let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let navVC = storyboard!.instantiateViewControllerWithIdentifier("detail_view") as! UINavigationController
