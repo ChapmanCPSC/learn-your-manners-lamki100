@@ -18,6 +18,6 @@ struct Drinking : Manner {
     {
         self.name = "Drinking"
         self.image = "drinking.jpg"
-        self.description = "\nTable manners for drinking beverages. Beverages drunk at the table and at parties have a set of manners all their own, and some guidelines apply across the board:\n-Take a drink only when you have no food in your mouth;\n-Sip instead of gulping;\n-if you're a woman, don't wear so much lipstick that your drinking glass will become smudged."
+        self.description = "Table manners for drinking beverages. Beverages drunk at the table and at parties have a set of manners all their own, and some guidelines apply across the board:\n-Take a drink only when you have no food in your mouth;\n-Sip instead of gulping;\n-if you're a woman, don't wear so much lipstick that your drinking glass will become smudged."
     }
 }
