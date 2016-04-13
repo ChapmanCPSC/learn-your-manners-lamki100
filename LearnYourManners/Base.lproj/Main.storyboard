@@ -19,16 +19,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4OR-TM-PLw">
-                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <rect key="frame" x="20" y="270" width="560" height="245"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Learn Your Manners" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Aj-Ql-HPu">
+                                <rect key="frame" x="60" y="95" width="480" height="51.5"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="43"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBd-EK-L85">
+                                <rect key="frame" x="246.5" y="540" width="107" height="35"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
+                                <state key="normal" title="Clear History">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearHistoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HZh-li-qbe"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4OR-TM-PLw" secondAttribute="bottom" id="9Oo-lK-gaN"/>
-                            <constraint firstItem="4OR-TM-PLw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="OHu-Mc-q5b"/>
+                            <constraint firstItem="1Aj-Ql-HPu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="7V2-dm-O8h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Aj-Ql-HPu" secondAttribute="trailing" constant="40" id="AEh-6j-xI1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4OR-TM-PLw" secondAttribute="bottom" constant="85" id="Ccp-85-Pvf"/>
+                            <constraint firstItem="iBd-EK-L85" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fge-Up-471"/>
+                            <constraint firstItem="iBd-EK-L85" firstAttribute="top" secondItem="4OR-TM-PLw" secondAttribute="bottom" constant="25" id="IIl-cS-ePz"/>
+                            <constraint firstItem="1Aj-Ql-HPu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="Pyh-gC-wkh"/>
+                            <constraint firstItem="1Aj-Ql-HPu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SJ5-VB-e5V"/>
+                            <constraint firstItem="4OR-TM-PLw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="250" id="VrC-m3-yaD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iBd-EK-L85" secondAttribute="bottom" constant="25" id="a5I-Oq-CTJ"/>
+                            <constraint firstItem="iBd-EK-L85" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kMw-s0-Sw7"/>
                             <constraint firstItem="4OR-TM-PLw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="osB-LV-3fn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4OR-TM-PLw" secondAttribute="trailing" id="qTD-fb-8rS"/>
                         </constraints>
@@ -39,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="563" y="512"/>
+            <point key="canvasLocation" x="570" y="512"/>
         </scene>
         <!--Manner Detailed View Controller-->
         <scene sceneID="Xvb-Mg-1dA">

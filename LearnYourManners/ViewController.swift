@@ -39,6 +39,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func clearHistoryPressed(sender: AnyObject) {
+        let curCells = mannerTableView.visibleCells
+        
+        // for each cell it clears the check
+        for cell in curCells
+        {
+            cell.accessoryType = .None
+        }
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.manners.count
     }
@@ -47,6 +57,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let manner = self.manners[indexPath.row]
         
+        // create each of the cells
         let cell = UITableViewCell()
         cell.textLabel!.text = manner.name
         
@@ -55,6 +66,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        // check the visited cell
         if indexPath.row != lastSelectedIndexPath
         {
             let newCell = tableView.cellForRowAtIndexPath(indexPath)
