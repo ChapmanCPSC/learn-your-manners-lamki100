@@ -50,9 +50,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = UITableViewCell()
         cell.textLabel!.text = manner.name
         
-        print("Testing accessoryType for \(indexPath.row) ... does it equal \(lastSelectedIndexPath)")
-        cell.accessoryType = (lastSelectedIndexPath == indexPath.row) ? .Checkmark : .None
-        
         return cell
     }
     
