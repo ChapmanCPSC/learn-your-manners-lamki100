@@ -21,6 +21,7 @@ class MannerDetailedViewController: UIViewController {
         
         // show image
         displayImageView.image = UIImage(named: self.manner.image)
+        displayImageView.contentMode = .ScaleAspectFit
         
         // show description
         descriptionTextView.text = self.manner.description
