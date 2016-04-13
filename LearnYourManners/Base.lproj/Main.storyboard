@@ -24,8 +24,8 @@
                                 <color key="separatorColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Learn Your Manners" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Aj-Ql-HPu">
-                                <rect key="frame" x="60" y="95" width="480" height="51.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn Your Manners" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Aj-Ql-HPu">
+                                <rect key="frame" x="60" y="95" width="480" height="109"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="43"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -81,7 +81,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="272"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iFu-6y-sD3">
-                                <rect key="frame" x="0.0" y="336" width="600" height="264"/>
+                                <rect key="frame" x="20" y="336" width="560" height="264"/>
                                 <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,16 +89,16 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="iFu-6y-sD3" firstAttribute="leading" secondItem="2oY-F8-gIL" secondAttribute="leadingMargin" constant="-20" id="42j-Al-DnB"/>
                             <constraint firstItem="m7a-N3-On2" firstAttribute="leading" secondItem="2oY-F8-gIL" secondAttribute="leadingMargin" constant="-20" id="6DH-55-78K"/>
                             <constraint firstItem="iFu-6y-sD3" firstAttribute="top" secondItem="m7a-N3-On2" secondAttribute="bottom" id="6mh-gQ-NQe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="m7a-N3-On2" secondAttribute="trailing" constant="-20" id="Nbj-3X-haJ"/>
                             <constraint firstItem="m7a-N3-On2" firstAttribute="top" secondItem="UL8-gF-lTP" secondAttribute="bottom" id="UEe-ZJ-qiS"/>
                             <constraint firstItem="m7a-N3-On2" firstAttribute="centerY" secondItem="2oY-F8-gIL" secondAttribute="centerY" constant="-100" id="ULb-og-NIs"/>
                             <constraint firstItem="EOo-6G-F0d" firstAttribute="top" secondItem="iFu-6y-sD3" secondAttribute="bottom" id="fst-gy-UOw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iFu-6y-sD3" secondAttribute="trailing" constant="-20" id="uTq-nW-cts"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iFu-6y-sD3" secondAttribute="trailing" id="qT2-kj-FVH"/>
+                            <constraint firstItem="iFu-6y-sD3" firstAttribute="leading" secondItem="2oY-F8-gIL" secondAttribute="leadingMargin" id="wsr-Av-Cxd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Jzh-rz-lJS">
