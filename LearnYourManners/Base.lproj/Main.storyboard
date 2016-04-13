@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4OR-TM-PLw">
-                                <rect key="frame" x="20" y="270" width="560" height="245"/>
+                                <rect key="frame" x="20" y="264" width="560" height="251"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBd-EK-L85">
-                                <rect key="frame" x="246.5" y="540" width="107" height="35"/>
+                                <rect key="frame" x="246" y="540" width="107" height="35"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
                                 <state key="normal" title="Clear History">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,11 +50,11 @@
                             <constraint firstItem="iBd-EK-L85" firstAttribute="top" secondItem="4OR-TM-PLw" secondAttribute="bottom" constant="25" id="IIl-cS-ePz"/>
                             <constraint firstItem="1Aj-Ql-HPu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="Pyh-gC-wkh"/>
                             <constraint firstItem="1Aj-Ql-HPu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SJ5-VB-e5V"/>
-                            <constraint firstItem="4OR-TM-PLw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="250" id="VrC-m3-yaD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iBd-EK-L85" secondAttribute="bottom" constant="25" id="a5I-Oq-CTJ"/>
                             <constraint firstItem="iBd-EK-L85" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kMw-s0-Sw7"/>
                             <constraint firstItem="4OR-TM-PLw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="osB-LV-3fn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4OR-TM-PLw" secondAttribute="trailing" id="qTD-fb-8rS"/>
+                            <constraint firstItem="4OR-TM-PLw" firstAttribute="top" secondItem="1Aj-Ql-HPu" secondAttribute="bottom" constant="60" id="uZh-z8-gQL"/>
                         </constraints>
                     </view>
                     <connections>
