@@ -26,6 +26,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         Drinking()
     ]
     
+    var mannersChecked : [String:Bool] = [:]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -47,6 +49,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         {
             cell.accessoryType = .None
         }
+        // remove all from dictionary so dictionary wont check things that are not checked anymore
+        mannersChecked.removeAll()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,6 +65,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = UITableViewCell()
         cell.textLabel!.text = manner.name
         
+        if (mannersChecked.keys.contains(manner.name))
+        {
+            cell.accessoryType = .Checkmark
+        }
+        
         return cell
     }
     
@@ -73,6 +82,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             newCell?.accessoryType = .Checkmark
             
             lastSelectedIndexPath = indexPath.row
+            
+            mannersChecked[(newCell?.textLabel!.text!)!] = true
         }
         
         //let storyBoard = UIStoryboard(name: "Main", bundle: nil)
