@@ -67,7 +67,80 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wlv-hr-t4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="570" y="-181"/>
+            <point key="canvasLocation" x="1268" y="-164"/>
+        </scene>
+        <!--Email View Controller-->
+        <scene sceneID="Tcw-Pp-7zh">
+            <objects>
+                <viewController id="szA-Ar-yBS" customClass="EmailViewController" customModule="LearnYourManners" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nLg-3H-3sr"/>
+                        <viewControllerLayoutGuide type="bottom" id="LUJ-lp-DOl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c30-or-IMK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send Email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P1-Ct-4Qw">
+                                <rect key="frame" x="161" y="58" width="278" height="54.5"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="43"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBQ-E6-nYF">
+                                <rect key="frame" x="376" y="450" width="58" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="BmY-9e-6VG" eventType="touchUpInside" id="sWB-oC-m44"/>
+                                    <action selector="sendPressed:" destination="szA-Ar-yBS" eventType="touchUpInside" id="vhg-LQ-P4P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99M-8a-NZ8">
+                                <rect key="frame" x="180" y="450" width="79" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelPressed:" destination="szA-Ar-yBS" eventType="touchUpInside" id="bSF-zT-JCT"/>
+                                    <action selector="donePressed:" destination="BmY-9e-6VG" eventType="touchUpInside" id="bcz-1D-ANs"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hello..." translatesAutoresizingMaskIntoConstraints="NO" id="kmP-cn-IQB">
+                                <rect key="frame" x="108" y="145" width="385" height="280"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="385" id="13e-Sw-bDd"/>
+                                    <constraint firstAttribute="height" constant="280" id="Mbq-8c-9ep"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="99M-8a-NZ8" firstAttribute="centerX" secondItem="c30-or-IMK" secondAttribute="centerX" constant="-80" id="153-vv-I8q"/>
+                            <constraint firstItem="5P1-Ct-4Qw" firstAttribute="centerY" secondItem="c30-or-IMK" secondAttribute="centerY" constant="-215" id="IBe-Hl-ZLv"/>
+                            <constraint firstItem="5P1-Ct-4Qw" firstAttribute="centerX" secondItem="c30-or-IMK" secondAttribute="centerX" id="LMu-Mm-yG4"/>
+                            <constraint firstItem="tBQ-E6-nYF" firstAttribute="centerX" secondItem="c30-or-IMK" secondAttribute="centerX" constant="105" id="ZJt-2Q-Y3S"/>
+                            <constraint firstItem="kmP-cn-IQB" firstAttribute="centerY" secondItem="c30-or-IMK" secondAttribute="centerY" constant="-15" id="aDC-Db-83t"/>
+                            <constraint firstItem="tBQ-E6-nYF" firstAttribute="centerY" secondItem="c30-or-IMK" secondAttribute="centerY" constant="170" id="fnH-vk-OHT"/>
+                            <constraint firstItem="99M-8a-NZ8" firstAttribute="centerY" secondItem="c30-or-IMK" secondAttribute="centerY" constant="170" id="i15-XJ-ZrP"/>
+                            <constraint firstItem="kmP-cn-IQB" firstAttribute="centerX" secondItem="c30-or-IMK" secondAttribute="centerX" id="mU9-D0-1kj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextView" destination="kmP-cn-IQB" id="ibf-PJ-65f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2EP-GU-zlN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="570" y="-164"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">

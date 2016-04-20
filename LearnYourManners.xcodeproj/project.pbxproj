@@ -24,6 +24,7 @@
 		9E6515571CBD933400965808 /* Drinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6515561CBD933400965808 /* Drinking.swift */; };
 		9E6515591CBD981400965808 /* MannerDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6515581CBD981400965808 /* MannerDetailedViewController.swift */; };
 		9ED1331E1CC6E2BD00E3D939 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1331D1CC6E2BD00E3D939 /* SettingsViewController.swift */; };
+		9ED133201CC6F73900E3D939 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1331F1CC6F73900E3D939 /* EmailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		9E6515561CBD933400965808 /* Drinking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drinking.swift; sourceTree = "<group>"; };
 		9E6515581CBD981400965808 /* MannerDetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MannerDetailedViewController.swift; sourceTree = "<group>"; };
 		9ED1331D1CC6E2BD00E3D939 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9ED1331F1CC6F73900E3D939 /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				9E6515311CBD8C2700965808 /* ViewController.swift */,
 				9E6515581CBD981400965808 /* MannerDetailedViewController.swift */,
 				9ED1331D1CC6E2BD00E3D939 /* SettingsViewController.swift */,
+				9ED1331F1CC6F73900E3D939 /* EmailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				9E6515591CBD981400965808 /* MannerDetailedViewController.swift in Sources */,
 				9E65154B1CBD90BE00965808 /* GivingCompliments.swift in Sources */,
 				9E6515321CBD8C2700965808 /* ViewController.swift in Sources */,
+				9ED133201CC6F73900E3D939 /* EmailViewController.swift in Sources */,
 				9E6515531CBD923700965808 /* Please.swift in Sources */,
 				9E6515301CBD8C2700965808 /* AppDelegate.swift in Sources */,
 				9E6515551CBD932F00965808 /* Eating.swift in Sources */,

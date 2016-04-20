@@ -38,11 +38,11 @@ class SettingsViewController: UIViewController {
         // take email address and see if its an email
         // TODO
         let email = emailTextBox.text!
+        let userDefaults = NSUserDefaults.standardUserDefaults()
         
         if (isValidEmail(email))
         {
             // save email address
-            let userDefaults = NSUserDefaults.standardUserDefaults()
             userDefaults.setObject(email, forKey: "saved_email")
             userDefaults.setBool(true, forKey: "email_set")
             
@@ -50,6 +50,10 @@ class SettingsViewController: UIViewController {
         }
         else if email == ""
         {
+            // save nothing
+            userDefaults.setObject("", forKey: "saved_email")
+            userDefaults.setBool(false, forKey: "email_set")
+            
             // just leave the page
             self.dismissViewControllerAnimated(true, completion: nil)
         }
