@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var mannerTableView: UITableView!
+    @IBOutlet weak var sendEmailButton: UIButton!
     
     var lastSelectedIndexPath: Int = -1
     var selectedIndexes: [Int] = []
@@ -34,6 +35,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         self.mannerTableView.dataSource = self
         self.mannerTableView.delegate = self
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        let emailSet = userDefaults.boolForKey("email_set")
+        
+        if emailSet
+        {
+            // display send email button
+            sendEmailButton.hidden = false
+        }
+        else
+        {
+            // otherwise don't display it
+            sendEmailButton.hidden = true
+        }
     }
 
     override func didReceiveMemoryWarning() {

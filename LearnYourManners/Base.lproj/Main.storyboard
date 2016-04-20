@@ -186,6 +186,16 @@
                                     <segue destination="BmY-9e-6VG" kind="show" id="w4D-j4-Uat"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yz8-4P-NWb">
+                                <rect key="frame" x="20" y="20" width="94" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
+                                <state key="normal" title="Send Email!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="szA-Ar-yBS" kind="show" id="XNy-Q9-SIr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -195,11 +205,13 @@
                             <constraint firstItem="lDQ-bh-Ses" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="EyF-wL-cGL"/>
                             <constraint firstItem="iBd-EK-L85" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fge-Up-471"/>
                             <constraint firstItem="iBd-EK-L85" firstAttribute="top" secondItem="4OR-TM-PLw" secondAttribute="bottom" constant="25" id="IIl-cS-ePz"/>
+                            <constraint firstItem="yz8-4P-NWb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KJf-Ns-1e9"/>
                             <constraint firstItem="1Aj-Ql-HPu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="Pyh-gC-wkh"/>
                             <constraint firstItem="1Aj-Ql-HPu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SJ5-VB-e5V"/>
                             <constraint firstItem="lDQ-bh-Ses" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Xnv-Dp-4dN"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iBd-EK-L85" secondAttribute="bottom" constant="25" id="a5I-Oq-CTJ"/>
                             <constraint firstItem="iBd-EK-L85" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kMw-s0-Sw7"/>
+                            <constraint firstItem="yz8-4P-NWb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kci-uj-zMU"/>
                             <constraint firstItem="4OR-TM-PLw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="osB-LV-3fn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4OR-TM-PLw" secondAttribute="trailing" id="qTD-fb-8rS"/>
                             <constraint firstItem="4OR-TM-PLw" firstAttribute="top" secondItem="1Aj-Ql-HPu" secondAttribute="bottom" constant="60" id="uZh-z8-gQL"/>
@@ -207,6 +219,7 @@
                     </view>
                     <connections>
                         <outlet property="mannerTableView" destination="4OR-TM-PLw" id="TSP-0w-KhM"/>
+                        <outlet property="sendEmailButton" destination="yz8-4P-NWb" id="hK7-Um-IPg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
