@@ -60,7 +60,7 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
             let alert = UIAlertController(title: "Error", message: "Unable to send email.", preferredStyle: UIAlertControllerStyle.Alert)
             
             // add an action (button)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
             
             // show the alert
             self.presentViewController(alert, animated: true, completion: nil)
@@ -69,5 +69,16 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
     
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?){
         controller.dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+        // pop up box saying invalid email
+        // create the alert
+        let alert = UIAlertController(title: "Sent", message: "Email sent.", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+        
+        // show the alert
+        self.presentViewController(alert, animated: true, completion: nil)
     }
 }
