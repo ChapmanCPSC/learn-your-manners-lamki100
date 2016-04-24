@@ -72,7 +72,7 @@
         <!--Email View Controller-->
         <scene sceneID="Tcw-Pp-7zh">
             <objects>
-                <viewController id="szA-Ar-yBS" customClass="EmailViewController" customModule="LearnYourManners" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="email_view" id="szA-Ar-yBS" customClass="EmailViewController" customModule="LearnYourManners" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nLg-3H-3sr"/>
                         <viewControllerLayoutGuide type="bottom" id="LUJ-lp-DOl"/>
@@ -100,9 +100,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99M-8a-NZ8">
-                                <rect key="frame" x="180" y="450" width="79" height="39"/>
+                                <rect key="frame" x="190" y="450" width="59" height="39"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
-                                <state key="normal" title="Cancel">
+                                <state key="normal" title="Done">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -193,7 +193,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="szA-Ar-yBS" kind="show" id="XNy-Q9-SIr"/>
+                                    <action selector="sendEmailPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4jG-rG-UrU"/>
                                 </connections>
                             </button>
                         </subviews>

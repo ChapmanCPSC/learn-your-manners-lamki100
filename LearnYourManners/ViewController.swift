@@ -70,6 +70,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         mannersChecked.removeAll()
     }
     
+    @IBAction func sendEmailPressed(sender: AnyObject) {
+        // transition to email page
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let emailVC = storyBoard.instantiateViewControllerWithIdentifier("email_view") as! EmailViewController
+        
+        // pass through list of manners that have been checked
+        var mannersNameCheck: [String] = []
+        for (mannerName, mannerChecked) in mannersChecked
+        {
+            if mannerChecked
+            {
+                mannersNameCheck.append(mannerName)
+            }
+        }
+        emailVC.mannersVisited = mannersNameCheck
+            
+        // launch vc
+        self.presentViewController(emailVC, animated: true, completion: nil)
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.manners.count
     }

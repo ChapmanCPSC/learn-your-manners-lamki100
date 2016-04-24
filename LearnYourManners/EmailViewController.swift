@@ -12,10 +12,20 @@ import MessageUI
 class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate {
 
     @IBOutlet weak var emailTextView: UITextView!
+    var mannersVisited: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // set message with visited states
+        var displayText = "Hello!\n\nThis app is great! I have learned about all of these things: \n\n"
+        for manner in mannersVisited
+        {
+            displayText += "-\(manner)\n"
+        }
+        
+        emailTextView.text = displayText
         
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(EmailViewController.dismissKeyboard))
@@ -33,6 +43,7 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
         // Dispose of any resources that can be recreated.
     }
     
+    // done button (got renamed)
     @IBAction func cancelPressed(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
@@ -52,6 +63,8 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
             email.setMessageBody(message, isHTML: false)
             email.setToRecipients(["\(recipient)"])
             presentViewController(email, animated: true, completion: nil)
+            
+            self.dismissViewControllerAnimated(true, completion: nil)
         }
         else
         {
