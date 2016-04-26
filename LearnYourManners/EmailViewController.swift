@@ -63,8 +63,6 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
             email.setMessageBody(message, isHTML: false)
             email.setToRecipients(["\(recipient)"])
             presentViewController(email, animated: true, completion: nil)
-            
-            self.dismissViewControllerAnimated(true, completion: nil)
         }
         else
         {
